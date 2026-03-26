@@ -103,7 +103,7 @@
 
 %----------SUMMARY----------
 \section{Professional Summary}
-\small{Senior AI Architect \& Data Scientist with \textbf{8+ years} of experience designing enterprise-scale \textbf{Agentic AI, Generative AI}, and Machine Learning solutions. Pioneer in building \textbf{production-grade Autonomous AI Agent systems} using custom \textbf{Agent Forge SDK} (AWS AgentCore derivative), with expertise in \textbf{Hybrid RAG pipelines (BM25 + Dense Embeddings + RRF Fusion)}, \textbf{LLM-powered self-critique loops}, and \textbf{Quantum Computing} (D-Wave QUBO optimization). Delivered \textbf{\$277M+ measurable business impact} across Fortune 500 clients.}
+\small{Senior AI Architect \& Data Scientist with \textbf{8+ years} of experience designing enterprise-scale \textbf{Agentic AI, Generative AI}, and Machine Learning solutions. Pioneer in building \textbf{production-grade Autonomous AI Agent systems} using \textbf{AWS AgentCore SDK}, with expertise in \textbf{Hybrid RAG pipelines}, \textbf{LLM-powered self-critique loops}. Delivered \textbf{\$277M+ measurable business impact} across Fortune 500 clients.}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -113,33 +113,33 @@
       {Senior AI Architect (Senior Consultant)}{January 2022 -- Present}
       {Deloitte Consulting USI}{Bangalore, India}
       
-      \vspace{4pt}
+      \vspace{12pt}
       \textit{\small\textbf{Disney TVA Schema Intelligence Chatbot} | AWS Bedrock, Claude 3.7 Sonnet, Agent Forge SDK}
       \resumeItemListStart
         \resumeItem{Architected \textbf{production-grade conversational AI chatbot} using \textbf{custom S3VectorsAgentRuntime} extending AWS AgentCore SDK to handle S3 Vectors' unique \texttt{metadata.text} storage pattern that standard SDK couldn't parse.}
         \resumeItem{Implemented \textbf{intelligent token management} with configurable \texttt{max\_rag\_context\_size} trimming that dynamically truncates retrieval chunks to prevent context overflow.}
         \resumeItem{Innovated \textbf{dual-path KB retrieval}: SDK's \texttt{extract\_retrieval\_chunks} for standard \texttt{content.text} + custom fallback for \texttt{metadata.text} with automatic deduplication.}
         \resumeItem{Created \textbf{follow-up query resolution system} with heuristic-based pronoun detection + URN extraction, rewriting vague queries for improved RAG retrieval.}
-        \resumeItem{Optimized memory retrieval latency from \textbf{70+ seconds to under 50 seconds} through memory hook optimization and session stashing before RAG augmentation.}
+        \resumeItem{Optimized memory retrieval latency from \textbf{17+ seconds to under 5 seconds} through memory hook optimization and session stashing before RAG augmentation.}
         \resumeItem{Built \textbf{KB write-back pipeline} with deterministic vector keys enabling immediate queryability of agent-generated summaries without sync delays.}
       \resumeItemListEnd
 
-      \vspace{4pt}
+      \vspace{12pt}
       \textit{\small\textbf{Disney ESPN Game Summary Platform} | AWS Nova Premier, Lambda, Real-time Video AI}
       \resumeItemListStart
         \resumeItem{Developed \textbf{GenAI highlight extraction platform} contributing to \textbf{\$231.76M AWS business expansion}. Architected \textbf{7-step serverless Lambda pipeline}: MediaLive → Kinesis → MediaPackage → S3 → Nova Premier → DynamoDB → Highlights.}
         \resumeItem{Designed \textbf{multimodal prompt engineering} for video analysis with confidence scoring per field, play-type classification, and precise timestamp extraction. Built \texttt{clean\_response\_text()} handling markdown fences and partial JSON.}
-        \resumeItem{Expanded architecture from NFL to \textbf{Cricket, Rugby, and Soccer leagues} with ~90\% event capture rate.}
+        \resumeItem{Expanded architecture from \textbf{NFL} to \textbf{Cricket, Rugby, and Soccer leagues} with ~90\% event capture rate.}
       \resumeItemListEnd
 
-      \vspace{4pt}
+      \vspace{12pt}
       \textit{\small\textbf{HP Enterprise - CXO Talk to Data Platform} | Databricks Genie, Azure OpenAI GPT-4o-mini}
       \resumeItemListStart
         \resumeItem{Built \textbf{AI-powered conversational analytics platform} replacing traditional BI dashboards for executive decision-making. First implementation of \textbf{Databricks Genie's NL-to-SQL} capabilities with user token forwarding.}
         \resumeItem{Architected \textbf{multi-table semantic layer} (2 Fact + 11 Dimension tables) with YAML-based semantic definitions. Implemented \textbf{hallucination reduction} through output validation against schema definitions.}
       \resumeItemListEnd
 
-      \vspace{4pt}
+      \vspace{12pt}
       \textit{\small\textbf{Toyota Demand Forecasting Engine} | LSTM, N-BEATS, Prophet, PySpark}
       \resumeItemListStart
         \resumeItem{Engineered enterprise-scale forecasting system managing \textbf{1.2 million SKU combinations} across 15 distribution centers, reducing annual inventory costs by \textbf{\$46.1 Million} with 70\% WMAPE.}
@@ -147,19 +147,42 @@
         \resumeItem{Designed \texttt{orchestrator.py} with \textbf{multiprocessing pool} executing parallel forecasts with YAML-driven multi-environment configuration.}
       \resumeItemListEnd
 
-      \vspace{4pt}
+      \vspace{12pt}
+      \textit{\small\textbf{Halliburton Financial Predictive Modeling} | N-BEATS, SARIMAX, Deep Learning}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{deep learning forecasting solution} for Accounts Payable/Receivable prediction using \textbf{N-BEATS} and \textbf{SARIMAX} ensemble, achieving \textbf{98\% accuracy} in invoice dispute prediction.}
+        \resumeItem{Reduced financial forecast \textbf{delivery time by 98\%} through automated pipeline optimization and multi-variate time series modeling capturing both trend and seasonality patterns.}
+      \resumeItemListEnd
+
+      \vspace{12pt}
       \textit{\small\textbf{Firm Initiatives: Agentic AI \& MLOps Estimation Frameworks}}
       \resumeItemListStart
         \resumeItem{Created \textbf{industry-first estimation frameworks} for Agentic AI and MLOps project sizing with 24+ iterations, \textbf{adopted across multiple Deloitte practices} for consistent project scoping.}
       \resumeItemListEnd
 
+      \vspace{12pt}
+      \vspace{12pt}
     \resumeSubheading
       {Senior Software Engineer (Machine Learning)}{February 2018 -- January 2022}
-      {WIPRO Technologies (Holmes AI Team)}{Bangalore, India}
+      {WIPRO Technologies}{Bangalore, India}
+      
+      \vspace{12pt}
+      \textit{\small\textbf{WIPRO Holmes (R\&D)} | LSTM, Reg-exp, Deep Learning}
       \resumeItemListStart
-        \resumeItem{Enhanced Contract Review tool using \textbf{Bi-LSTM + CRF architecture} for clause extraction. Improved accuracy from \textbf{76\% to 93\%} through hyperparameter optimization and domain-specific regex patterns.}
-        \resumeItem{Developed \textbf{CNN (VGG19) with Transfer Learning} for AutoCAD symbol detection, automating 2D-to-3D schematic conversion for Oil \& Gas client.}
-        \resumeItem{Built \textbf{OCR pipeline} with custom image enhancement (contrast/sharpening) using Tesseract + AWS Textract for legacy document digitization.}
+        \resumeItem{Enhanced Contract Review tool using \textbf{Bi-LSTM + CRF architecture} for sequence labeling of legal clauses in MSAs and SOWs. The \textbf{bidirectional LSTM} captured long-range contextual dependencies while the \textbf{CRF layer} learned valid BIO tag transitions (B-CLAUSE → I-CLAUSE), preventing invalid sequence predictions. Combined with \textbf{character-level embeddings} for OOV legal terminology and \textbf{domain-specific regex patterns} for structured entities (dates, parties, amounts), improved extraction accuracy from \textbf{76\% to 93\%}.}
+        \resumeItemListEnd
+
+      \vspace{12pt}
+      \textit{\small\textbf{Huawei Video (R\&D)} | DIP, Vector DB, Deep Learning}
+      \resumeItemListStart
+        \resumeItem{Created data model for \textbf{real-time recommendation pipelines} using \textbf{Deep Interest Network (DIN)} for user behavior modeling. Built \textbf{attention-weighted embeddings} capturing user-item interactions, stored in \textbf{Redis} for low-latency serving + \textbf{Milvus} for vector similarity retrieval. Integrated with \textbf{RASE (Huawei Recommendation-as-a-Service)} for 3 pipelines: \textbf{Hot Broadcast} (trending long-form), \textbf{You May Like} (personalized long-form), and \textbf{Waterfall E2} (short-video infinite scroll).}
+        \resumeItemListEnd
+        
+      \vspace{12pt}
+      \textit{\small\textbf{Shell Plc} | CNN, Transfer Learning, Machine Learning}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{CNN with VGG19 Transfer Learning} in Keras to detect small symbols (valves, pumps, instruments) in P\&ID drawings. Implemented \textbf{Hough Circle Transform} + \textbf{TensorFlow Object Detection API} for geometric shape recognition, automating 2D-to-3D schematic conversion.}
+        \resumeItem{Developed \textbf{OCR pipeline} combining \textbf{Tesseract} (for structured text) + \textbf{AWS Textract} (for tables/forms) with custom image preprocessing (contrast enhancement, adaptive thresholding, noise reduction) for legacy engineering document digitization.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -170,24 +193,30 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{Autonomous Multi-Agent Strategic Analysis Engine} $|$ \emph{Gemini 2.5 Flash, Hybrid RAG, Self-Refinement}}{}
+          \vspace{12pt}
           \resumeItemListStart
             \resumeItem{\textbf{Genuinely Agentic Architecture}: LLM-powered planning where \texttt{AnalystAgent} autonomously decomposes complex prompts into executable multi-step plans without predefined workflows.}
             \resumeItem{\textbf{Hybrid Retrieval Pipeline}: Custom BM25 sparse + Gemini dense embeddings with \textbf{Reciprocal Rank Fusion (RRF)} + \textbf{LLM-powered reranking} (0-1 relevance scoring).}
             \resumeItem{\textbf{Self-Critique \& Refinement Loop}: Rubric-based critique (Depth/Evidence/Causality/Actionability) with automatic \texttt{NEEDS\_REFINEMENT} detection triggering re-retrieval cycles.}
             \resumeItem{\textbf{Dynamic Tool Generation}: Runtime code synthesis creating callable Python functions from LLM output. \textbf{Graph Memory} with semantic triple extraction for persistent knowledge.}
-            \resumeItem{Real data integration: SEC EDGAR XBRL, Google News RSS, Gemini Search Grounding. \textbf{Cost Guard System} with budget caps and aggressive caching.}
+            \resumeItem{\textbf{Real data integration}: SEC EDGAR XBRL, Google News RSS, Gemini Search Grounding. \textbf{Cost Guard System} with budget caps and aggressive caching.}
           \resumeItemListEnd
 
+      \vspace{12pt}
       \resumeProjectHeading
-          {\textbf{Quantum Portfolio Optimization Engine} $|$ \emph{D-Wave Quantum Annealing, QUBO, Simulated Annealing}}{}
+      \vspace{12pt}
+          {\textbf{Quantum Portfolio Optimization Engine} \(MBA Project
+          \vspace{12pt}\) $|$ \emph{D-Wave Quantum Annealing, QUBO, Simulated Annealing}}{}
           \resumeItemListStart
             \resumeItem{\textbf{QUBO Formulation from First Principles}: Quadratic Unconstrained Binary Optimization with risk terms (covariance), return rewards (mean returns), and cardinality constraints via penalty functions.}
-            \resumeItem{\textbf{Classical-Quantum Benchmark}: Side-by-side scipy max-Sharpe vs. quantum annealing with hyperparameter sweep over $\lambda_{risk}$, $\lambda_{return}$, penalty coefficients.}
+            \resumeItem{\textbf{Classical-Quantum Benchmark}: Side-by-side scipy max-Sharpe vs. quantum annealing with hyperparameter sweep over \emph{risk \& return}, penalty coefficients.}
             \resumeItem{\textbf{D-Wave Leap QPU Integration}: Production-ready execution with \texttt{EmbeddingComposite} for automatic qubit mapping. Efficient frontier visualization.}
           \resumeItemListEnd
 
+      \vspace{12pt}
       \resumeProjectHeading
-          {\textbf{LeetCode AI Companion (Android)} $|$ \emph{Kotlin, Jetpack Compose, Gemini API, GraphQL}}{}
+      \vspace{12pt}
+          {\textbf{LeetCode AI Companion (Android) (Personal Development)} $|$ \emph{Kotlin, Jetpack Compose, Gemini API, GraphQL}}{}
           \resumeItemListStart
             \resumeItem{\textbf{Jetpack Compose UI} with Material Design 3. LeetCode GraphQL integration for daily challenges. \textbf{Gemini generation pipeline} with retry logic.}
             \resumeItem{\textbf{GitHub Push Automation}: One-tap export of solutions to repository. Calendar event integration for completion tracking. Mermaid flow viewer with gestures.}
@@ -198,6 +227,7 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+  \vspace{8pt}
     \resumeSubheading
       {Manipal University}{Jaipur, India}
       {Master of Business Administration, Analytics and Data Science}{August 2024 -- June 2026}
@@ -209,6 +239,7 @@
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
+\vspace{8pt}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{AWS Certified Machine Learning -- Specialty} $|$ Amazon Web Services (Oct 2021) \\
@@ -226,8 +257,8 @@
      \textbf{Agentic AI \& RAG}{: Agent Forge SDK (AWS AgentCore), Strands Agents, Multi-Agent Orchestration, LLM Planning \& Critique, Self-Refinement Loops, Hybrid Retrieval (BM25 + Dense + RRF), LLM Reranking, S3 Vectors, Token-aware Trimming} \\
      \textbf{LLMs \& Foundation Models}{: Claude 3.7 Sonnet, GPT-4/4o-mini, AWS Nova Premier, Gemini 2.5 Flash, Llama 3, Amazon Titan Embed v2} \\
      \textbf{Quantum Computing}{: D-Wave Quantum Annealing, QUBO Formulation, Simulated Annealing, D-Wave Leap, Binary Quadratic Models} \\
-     \textbf{Deep Learning}{: Transformers (BERT, DiT), CNN (VGG19, ResNet), LSTM, Bi-LSTM, N-BEATS, Prophet} \\
-     \textbf{Cloud \& MLOps}{: AWS (Bedrock, SageMaker, Lambda, S3, MediaLive, Kinesis), Azure (Databricks, OpenAI), GCP (Vertex AI), Docker, Kubernetes, Airflow} \\
+     \textbf{Deep Learning}{: Transformers (BERT, DiT), CNN (VGG19, ResNet), LSTM, Bi-LSTM, Deep Interest Network (DIN), N-BEATS, Prophet} \\
+     \textbf{Cloud \& MLOps}{: AWS (Bedrock, SageMaker, Lambda, S3, MediaLive, Kinesis, SQS, Identity Manager, Media Package, Media Convert), Azure (OpenAI), GCP (Vertex AI), Docker, Kubernetes, Airflow, DataBricks} \\
      \textbf{Languages \& Data}{: Python, PySpark, SQL, Kotlin (Android), Pandas, NumPy, TensorFlow, PyTorch}
     }}
  \end{itemize}
@@ -243,6 +274,116 @@
      \textbf{93\%} contract extraction accuracy $|$ 
      \textbf{1.2M SKUs} forecasting scale $|$ 
      \textbf{4+ Fortune 500} production deployments
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vigneshwara Chinnadurai} \\ \vspace{1pt}
+    \small 986-555-0901 $|$ \href{mailto:x@x.com}{\underline{rockingstarvic@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/vigneshwarac}} $|$
+    \href{https://github.com/...}{\underline{github.com/VigneshwaraChinnadurai}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal University}{Jaipur, India}
+      {Master of Business Administration, Analytics and Data Science}{August 2024 -- June 2026}
+    \resumeSubheading
+      {Anna University - Chennai}{Tamilnadu, India}
+      {Bachelor's in Electrical Engineering}{August 2014 -- May 2017}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Machine Learning Engineer (Senior Consultant)}{January 2022 -- Present}
+      {Deloitte Consulting USI}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed a forecasting engine for a major automotive manufacturer, managing 1.2 million SKU combinations across fifteen distribution centers. Utilized LSTM and Prophet, achieving 70\% WMAPE and reducing annual inventory holding costs by \$46.1 Million.}
+        \resumeItem{Developed a deep learning solution to forecast Accounts Payable/Receivable. Reduced invoice dispute prediction errors, achieving 98\% accuracy and cutting delivery time by 98\%.}
+        \resumeItem{Engineered an automated highlight generation platform for the sports media industry using a serverless AWS architecture with Amazon Bedrock. The platform processes multiple live video streams in real-time, using AI/ML to detect key events such as 15+ yard passes, all scoring plays, and turnovers with a ~90\% capture rate, which is expected to exceed 98\% with fine-tuning.}
+        \resumeItem{Architect-ed a unified, multi-agent AI platform on AWS Bedrock, supporting both conversational and analytical agents from a common, scalable infrastructure. This platform powers an S3-backed RAG chat bot for enterprise knowledge discovery and a specialized agent that automates the analysis of JSON schema changes by enriching data with JIRA and GitHub context to produce structured, audible summaries.}
+        \resumeItem{Orchestrated the development and implementation of a Databricks Genie-powered solution, streamlining and automating CCO funnel data analytics. This initiative provided enhanced visibility into the customer conversion pipeline, enabling data-driven decision-making and optimization of the sales process.}        
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Software Engineer (Machine Learning)}{February 2018 -- January 2022}
+      {WIPRO Technologies (WIPRO Holmes Team)}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced a Contract Review tool using Bi-LSTM and CRF to extract clauses from MSAs and SOWs. Improved extraction accuracy from 76\% to 93\% through hyperparameter tuning and Regex pattern matching.}
+        \resumeItem{Developed a CNN (VGG19) model with Transfer Learning to detect symbols and objects within AutoCAD drawings for an Oil \& Gas client, automating the conversion of 2D schematics into 3D projections.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Detect Emotions of Your Favorite Cartoon (HackerEarth)} $|$ \emph{Python, ML}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Objective:} To build a model that detects emotions in cartoon characters by extracting image frames from a given video clip to use as a dataset.}
+            \resumeItem{\textbf{Key Challenges:} The project involved working with a very small and imbalanced dataset, which required special techniques to ensure model performance.}
+            \resumeItem{\textbf{Achievement:} Secured an honorable ranking in the competition by achieving 73\% accuracy with the model.}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+      %       \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+      %       \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+      %       \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, SQL (Postgres)} \\
+     \textbf{Frameworks}{: LangGraph, TensorFlow, CUDA, Keras, SK-Learn} \\
+     \textbf{Developer Tools}{: Git, AWS (SageMaker, Bedrock), DataBricks, Google Cloud Platform (Vertex AI), VS Code} \\
+     \textbf{Libraries \& Models}{: LLMs (GPT, Llama), Transformers (BERT, DiT), CNNs, Prophet, Spacy, Pandas, NumPy, Matplotlib}
     }}
  \end{itemize}
 
