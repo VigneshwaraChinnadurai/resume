@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Vigneshwara Chinnadurai
+% Based off of: https://github.com/VigneshwaraChinnadurai/resume
+% Enhanced: March 2026
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Vigneshwara Chinnadurai} \\ \vspace{1pt}
+    \small \faPhone\ 986-555-0901 $|$ 
+    \href{mailto:rockingstarvic@gmail.com}{\faEnvelope\ \underline{rockingstarvic@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/vigneshwarac}{\faLinkedin\ \underline{linkedin.com/in/vigneshwarac}} $|$
+    \href{https://github.com/VigneshwaraChinnadurai}{\faGithub\ \underline{github.com/VigneshwaraChinnadurai}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Professional Summary}
+\small{Senior AI Architect \& Data Scientist with \textbf{8+ years} of experience designing enterprise-scale \textbf{Agentic AI, Generative AI}, and Machine Learning solutions. Pioneer in building \textbf{production-grade Autonomous AI Agent systems} using custom \textbf{Agent Forge SDK} (AWS AgentCore derivative), with expertise in \textbf{Hybrid RAG pipelines (BM25 + Dense Embeddings + RRF Fusion)}, \textbf{LLM-powered self-critique loops}, and \textbf{Quantum Computing} (D-Wave QUBO optimization). Delivered \textbf{\$277M+ measurable business impact} across Fortune 500 clients.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior AI Architect (Senior Consultant)}{January 2022 -- Present}
+      {Deloitte Consulting USI}{Bangalore, India}
+      
+      \vspace{4pt}
+      \textit{\small\textbf{Disney TVA Schema Intelligence Chatbot} | AWS Bedrock, Claude 3.7 Sonnet, Agent Forge SDK}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{production-grade conversational AI chatbot} using \textbf{custom S3VectorsAgentRuntime} extending AWS AgentCore SDK to handle S3 Vectors' unique \texttt{metadata.text} storage pattern that standard SDK couldn't parse.}
+        \resumeItem{Implemented \textbf{intelligent token management} with configurable \texttt{max\_rag\_context\_size} trimming that dynamically truncates retrieval chunks to prevent context overflow.}
+        \resumeItem{Innovated \textbf{dual-path KB retrieval}: SDK's \texttt{extract\_retrieval\_chunks} for standard \texttt{content.text} + custom fallback for \texttt{metadata.text} with automatic deduplication.}
+        \resumeItem{Created \textbf{follow-up query resolution system} with heuristic-based pronoun detection + URN extraction, rewriting vague queries for improved RAG retrieval.}
+        \resumeItem{Optimized memory retrieval latency from \textbf{70+ seconds to under 50 seconds} through memory hook optimization and session stashing before RAG augmentation.}
+        \resumeItem{Built \textbf{KB write-back pipeline} with deterministic vector keys enabling immediate queryability of agent-generated summaries without sync delays.}
+      \resumeItemListEnd
+
+      \vspace{4pt}
+      \textit{\small\textbf{Disney ESPN Game Summary Platform} | AWS Nova Premier, Lambda, Real-time Video AI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{GenAI highlight extraction platform} contributing to \textbf{\$231.76M AWS business expansion}. Architected \textbf{7-step serverless Lambda pipeline}: MediaLive → Kinesis → MediaPackage → S3 → Nova Premier → DynamoDB → Highlights.}
+        \resumeItem{Designed \textbf{multimodal prompt engineering} for video analysis with confidence scoring per field, play-type classification, and precise timestamp extraction. Built \texttt{clean\_response\_text()} handling markdown fences and partial JSON.}
+        \resumeItem{Expanded architecture from NFL to \textbf{Cricket, Rugby, and Soccer leagues} with ~90\% event capture rate.}
+      \resumeItemListEnd
+
+      \vspace{4pt}
+      \textit{\small\textbf{HP Enterprise - CXO Talk to Data Platform} | Databricks Genie, Azure OpenAI GPT-4o-mini}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{AI-powered conversational analytics platform} replacing traditional BI dashboards for executive decision-making. First implementation of \textbf{Databricks Genie's NL-to-SQL} capabilities with user token forwarding.}
+        \resumeItem{Architected \textbf{multi-table semantic layer} (2 Fact + 11 Dimension tables) with YAML-based semantic definitions. Implemented \textbf{hallucination reduction} through output validation against schema definitions.}
+      \resumeItemListEnd
+
+      \vspace{4pt}
+      \textit{\small\textbf{Toyota Demand Forecasting Engine} | LSTM, N-BEATS, Prophet, PySpark}
+      \resumeItemListStart
+        \resumeItem{Engineered enterprise-scale forecasting system managing \textbf{1.2 million SKU combinations} across 15 distribution centers, reducing annual inventory costs by \textbf{\$46.1 Million} with 70\% WMAPE.}
+        \resumeItem{Implemented \textbf{hybrid LSTM architecture} with dual-layer Lambda expansions, \textbf{zero-entry "+1 trick"} for MinMax scaling, and \textbf{ensemble model selection} (LSTM/N-BEATS/SVR/Prophet) per SKU characteristics.}
+        \resumeItem{Designed \texttt{orchestrator.py} with \textbf{multiprocessing pool} executing parallel forecasts with YAML-driven multi-environment configuration.}
+      \resumeItemListEnd
+
+      \vspace{4pt}
+      \textit{\small\textbf{Firm Initiatives: Agentic AI \& MLOps Estimation Frameworks}}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{industry-first estimation frameworks} for Agentic AI and MLOps project sizing with 24+ iterations, \textbf{adopted across multiple Deloitte practices} for consistent project scoping.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Software Engineer (Machine Learning)}{February 2018 -- January 2022}
+      {WIPRO Technologies (Holmes AI Team)}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced Contract Review tool using \textbf{Bi-LSTM + CRF architecture} for clause extraction. Improved accuracy from \textbf{76\% to 93\%} through hyperparameter optimization and domain-specific regex patterns.}
+        \resumeItem{Developed \textbf{CNN (VGG19) with Transfer Learning} for AutoCAD symbol detection, automating 2D-to-3D schematic conversion for Oil \& Gas client.}
+        \resumeItem{Built \textbf{OCR pipeline} with custom image enhancement (contrast/sharpening) using Tesseract + AWS Textract for legacy document digitization.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Personal R\&D Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Autonomous Multi-Agent Strategic Analysis Engine} $|$ \emph{Gemini 2.5 Flash, Hybrid RAG, Self-Refinement}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{Genuinely Agentic Architecture}: LLM-powered planning where \texttt{AnalystAgent} autonomously decomposes complex prompts into executable multi-step plans without predefined workflows.}
+            \resumeItem{\textbf{Hybrid Retrieval Pipeline}: Custom BM25 sparse + Gemini dense embeddings with \textbf{Reciprocal Rank Fusion (RRF)} + \textbf{LLM-powered reranking} (0-1 relevance scoring).}
+            \resumeItem{\textbf{Self-Critique \& Refinement Loop}: Rubric-based critique (Depth/Evidence/Causality/Actionability) with automatic \texttt{NEEDS\_REFINEMENT} detection triggering re-retrieval cycles.}
+            \resumeItem{\textbf{Dynamic Tool Generation}: Runtime code synthesis creating callable Python functions from LLM output. \textbf{Graph Memory} with semantic triple extraction for persistent knowledge.}
+            \resumeItem{Real data integration: SEC EDGAR XBRL, Google News RSS, Gemini Search Grounding. \textbf{Cost Guard System} with budget caps and aggressive caching.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Quantum Portfolio Optimization Engine} $|$ \emph{D-Wave Quantum Annealing, QUBO, Simulated Annealing}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{QUBO Formulation from First Principles}: Quadratic Unconstrained Binary Optimization with risk terms (covariance), return rewards (mean returns), and cardinality constraints via penalty functions.}
+            \resumeItem{\textbf{Classical-Quantum Benchmark}: Side-by-side scipy max-Sharpe vs. quantum annealing with hyperparameter sweep over $\lambda_{risk}$, $\lambda_{return}$, penalty coefficients.}
+            \resumeItem{\textbf{D-Wave Leap QPU Integration}: Production-ready execution with \texttt{EmbeddingComposite} for automatic qubit mapping. Efficient frontier visualization.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{LeetCode AI Companion (Android)} $|$ \emph{Kotlin, Jetpack Compose, Gemini API, GraphQL}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{Jetpack Compose UI} with Material Design 3. LeetCode GraphQL integration for daily challenges. \textbf{Gemini generation pipeline} with retry logic.}
+            \resumeItem{\textbf{GitHub Push Automation}: One-tap export of solutions to repository. Calendar event integration for completion tracking. Mermaid flow viewer with gestures.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal University}{Jaipur, India}
+      {Master of Business Administration, Analytics and Data Science}{August 2024 -- June 2026}
+    \resumeSubheading
+      {Anna University}{Chennai, India}
+      {Bachelor of Engineering, Electrical \& Electronics}{August 2014 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Certified Machine Learning -- Specialty} $|$ Amazon Web Services (Oct 2021) \\
+     \textbf{Delivery Accreditation - AI Agents} $|$ ServiceNow \\
+     \textbf{Configure AI Applications to Optimize Search Results} $|$ Google \\
+     \textbf{Deep Learning Specialization} $|$ Coursera/Udacity
+    }}
+ \end{itemize}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Agentic AI \& RAG}{: Agent Forge SDK (AWS AgentCore), Strands Agents, Multi-Agent Orchestration, LLM Planning \& Critique, Self-Refinement Loops, Hybrid Retrieval (BM25 + Dense + RRF), LLM Reranking, S3 Vectors, Token-aware Trimming} \\
+     \textbf{LLMs \& Foundation Models}{: Claude 3.7 Sonnet, GPT-4/4o-mini, AWS Nova Premier, Gemini 2.5 Flash, Llama 3, Amazon Titan Embed v2} \\
+     \textbf{Quantum Computing}{: D-Wave Quantum Annealing, QUBO Formulation, Simulated Annealing, D-Wave Leap, Binary Quadratic Models} \\
+     \textbf{Deep Learning}{: Transformers (BERT, DiT), CNN (VGG19, ResNet), LSTM, Bi-LSTM, N-BEATS, Prophet} \\
+     \textbf{Cloud \& MLOps}{: AWS (Bedrock, SageMaker, Lambda, S3, MediaLive, Kinesis), Azure (Databricks, OpenAI), GCP (Vertex AI), Docker, Kubernetes, Airflow} \\
+     \textbf{Languages \& Data}{: Python, PySpark, SQL, Kotlin (Android), Pandas, NumPy, TensorFlow, PyTorch}
+    }}
+ \end{itemize}
+
+
+%-----------KEY ACHIEVEMENTS-----------
+\section{Key Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\$46.1M} annual inventory savings at Toyota $|$ 
+     \textbf{\$231.76M} AWS expansion via Disney ESPN $|$ 
+     \textbf{30\%} latency reduction (70s→50s) $|$ 
+     \textbf{93\%} contract extraction accuracy $|$ 
+     \textbf{1.2M SKUs} forecasting scale $|$ 
+     \textbf{4+ Fortune 500} production deployments
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
