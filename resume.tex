@@ -19,7 +19,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
-\input{glyphtounicode}
+%\input{glyphtounicode} % Not needed for XeTeX
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -46,7 +46,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% \pdfgentounicode=1 % Not needed for XeTeX (handles Unicode natively)
 
 %-------------------------
 % Custom commands
@@ -122,6 +122,15 @@
         \resumeItem{Created \textbf{follow-up query resolution system} with heuristic-based pronoun detection + URN extraction, rewriting vague queries for improved RAG retrieval.}
         \resumeItem{Optimized memory retrieval latency from \textbf{17+ seconds to under 5 seconds} through memory hook optimization and session stashing before RAG augmentation.}
         \resumeItem{Built \textbf{KB write-back pipeline} with deterministic vector keys enabling immediate queryability of agent-generated summaries without sync delays.}
+      \resumeItemListEnd
+
+      \vspace{12pt}
+      \textit{\small\textbf{Disney PGT Document Parser Agent} | AWS Lambda, Textract, Claude 3.7 Sonnet, SAM}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{intelligent multi-format document parsing pipeline} for Disney's upfront spec sheet extraction, processing \textbf{Excel, PDF, Images, and Email (.msg)} with type-specific processors (pandas/openpyxl, Textract async/sync, extract-msg).}
+        \resumeItem{Designed \textbf{serverless event-driven architecture}: S3 Upload → Lambda Router → File Processor → Textract/pandas → Smart Chunker → Claude (Bedrock) → DynamoDB, deployed via \textbf{AWS SAM/CloudFormation}.}
+        \resumeItem{Implemented \textbf{smart chunking strategy} for large documents exceeding Claude's context limit with header context preservation and parallel multi-pass extraction with merged results.}
+        \resumeItem{Engineered \textbf{composite Proposal ID generation} system linking disparate document types (specs, emails, PDFs) to unified proposal records using deterministic hashing when explicit IDs are absent.}
       \resumeItemListEnd
 
       \vspace{12pt}
@@ -203,10 +212,9 @@
           \resumeItemListEnd
 
       \vspace{12pt}
-      \resumeProjectHeading
       \vspace{12pt}
-          {\textbf{Quantum Portfolio Optimization Engine} \(MBA Project
-          \vspace{12pt}\) $|$ \emph{D-Wave Quantum Annealing, QUBO, Simulated Annealing}}{}
+      \resumeProjectHeading
+          {\textbf{Quantum Portfolio Optimization Engine} (MBA Project) $|$ \emph{D-Wave Quantum Annealing, QUBO, Simulated Annealing}}{}
           \resumeItemListStart
             \resumeItem{\textbf{QUBO Formulation from First Principles}: Quadratic Unconstrained Binary Optimization with risk terms (covariance), return rewards (mean returns), and cardinality constraints via penalty functions.}
             \resumeItem{\textbf{Classical-Quantum Benchmark}: Side-by-side scipy max-Sharpe vs. quantum annealing with hyperparameter sweep over \emph{risk \& return}, penalty coefficients.}
@@ -215,7 +223,6 @@
 
       \vspace{12pt}
       \resumeProjectHeading
-      \vspace{12pt}
           {\textbf{LeetCode AI Companion (Android) (Personal Development)} $|$ \emph{Kotlin, Jetpack Compose, Gemini API, GraphQL}}{}
           \resumeItemListStart
             \resumeItem{\textbf{Jetpack Compose UI} with Material Design 3. LeetCode GraphQL integration for daily challenges. \textbf{Gemini generation pipeline} with retry logic.}
