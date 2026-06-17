@@ -110,20 +110,9 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior AI Architect (Senior Consultant)}{January 2022 -- Present}
+      {Senior AI Architect (AI and Data Science Engineer III)}{January 2022 -- Present}
       {Deloitte Consulting USI}{Bangalore, India}
       
-      \vspace{12pt}
-      \textit{\small\textbf{Disney TVA Schema Intelligence Chatbot} | AWS Bedrock, Claude 3.7 Sonnet, Agent Forge SDK}
-      \resumeItemListStart
-        \resumeItem{Architected \textbf{production-grade conversational AI chatbot} using \textbf{custom S3VectorsAgentRuntime} extending AWS AgentCore SDK to handle S3 Vectors' unique \texttt{metadata.text} storage pattern that standard SDK couldn't parse.}
-        \resumeItem{Implemented \textbf{intelligent token management} with configurable \texttt{max\_rag\_context\_size} trimming that dynamically truncates retrieval chunks to prevent context overflow.}
-        \resumeItem{Innovated \textbf{dual-path KB retrieval}: SDK's \texttt{extract\_retrieval\_chunks} for standard \texttt{content.text} + custom fallback for \texttt{metadata.text} with automatic deduplication.}
-        \resumeItem{Created \textbf{follow-up query resolution system} with heuristic-based pronoun detection + URN extraction, rewriting vague queries for improved RAG retrieval.}
-        \resumeItem{Optimized memory retrieval latency from \textbf{17+ seconds to under 5 seconds} through memory hook optimization and session stashing before RAG augmentation.}
-        \resumeItem{Built \textbf{KB write-back pipeline} with deterministic vector keys enabling immediate queryability of agent-generated summaries without sync delays.}
-      \resumeItemListEnd
-
       \vspace{12pt}
       \textit{\small\textbf{Disney PGT Document Parser Agent} | AWS Lambda, Textract, Claude 3.7 Sonnet, SAM}
       \resumeItemListStart
@@ -134,39 +123,63 @@
       \resumeItemListEnd
 
       \vspace{12pt}
+      \textit{\small\textbf{Disney TVA Schema Intelligence Chatbot} | AWS Bedrock, Claude 3.7 Sonnet, Agent Forge SDK}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{production-grade conversational AI chatbot} using \textbf{custom S3VectorsAgentRuntime} extending AWS AgentCore SDK to handle S3 Vectors' unique \texttt{metadata.text} storage pattern that standard SDK couldn't parse.}
+        \resumeItem{Implemented \textbf{intelligent token management} with configurable \texttt{max\_rag\_context\_size} trimming that dynamically truncates retrieval chunks to prevent context overflow.}
+        \resumeItem{Innovated \textbf{dual-path KB retrieval}: SDK's \texttt{extract\_retrieval\_chunks} for standard \texttt{content.text} + custom fallback for \texttt{metadata.text} with automatic deduplication.}
+        \resumeItem{Created \textbf{follow-up query resolution system} with heuristic-based pronoun detection + URN extraction, rewriting vague queries for improved RAG retrieval.}
+        \resumeItem{Reduced \textbf{memory retrieval latency by 70\%} (17+ seconds to under 5 seconds) by optimizing memory hooks and implementing session stashing before RAG augmentation.}
+        \resumeItem{Built \textbf{KB write-back pipeline} with deterministic vector keys enabling immediate queryability of agent-generated summaries without sync delays.}
+      \resumeItemListEnd
+
+      \vspace{12pt}
       \textit{\small\textbf{Disney ESPN Game Summary Platform} | AWS Nova Premier, Lambda, Real-time Video AI}
       \resumeItemListStart
-        \resumeItem{Developed \textbf{GenAI highlight extraction platform} contributing to \textbf{\$231.76M AWS business expansion}. Architected \textbf{7-step serverless Lambda pipeline}: MediaLive → Kinesis → MediaPackage → S3 → Nova Premier → DynamoDB → Highlights.}
+        \resumeItem{Drove \textbf{\$231.76M AWS business expansion} by developing \textbf{GenAI highlight extraction platform}, architecting \textbf{7-step serverless Lambda pipeline}: MediaLive → Kinesis → MediaPackage → S3 → Nova Premier → DynamoDB → Highlights.}
         \resumeItem{Designed \textbf{multimodal prompt engineering} for video analysis with confidence scoring per field, play-type classification, and precise timestamp extraction. Built \texttt{clean\_response\_text()} handling markdown fences and partial JSON.}
-        \resumeItem{Expanded architecture from \textbf{NFL} to \textbf{Cricket, Rugby, and Soccer leagues} with ~90\% event capture rate.}
+        \resumeItem{Scaled platform to \textbf{4 major sports leagues} (NFL, Cricket, Rugby, Soccer), achieving \textbf{~90\% event capture rate}, by adapting multimodal prompt engineering for sport-specific play-type classification.}
       \resumeItemListEnd
 
       \vspace{12pt}
       \textit{\small\textbf{HP Enterprise - CXO Talk to Data Platform} | Databricks Genie, Azure OpenAI GPT-4o-mini}
       \resumeItemListStart
-        \resumeItem{Built \textbf{AI-powered conversational analytics platform} replacing traditional BI dashboards for executive decision-making. First implementation of \textbf{Databricks Genie's NL-to-SQL} capabilities with user token forwarding.}
-        \resumeItem{Architected \textbf{multi-table semantic layer} (2 Fact + 11 Dimension tables) with YAML-based semantic definitions. Implemented \textbf{hallucination reduction} through output validation against schema definitions.}
+        \resumeItem{Eliminated \textbf{manual BI dashboard dependency} for C-suite decision-making by building \textbf{AI-powered conversational analytics platform} with first implementation of \textbf{Databricks Genie's NL-to-SQL} capabilities and user token forwarding.}
+        \resumeItem{Reduced \textbf{LLM hallucination rate} through output validation against schema definitions, by architecting \textbf{multi-table semantic layer} (2 Fact + 11 Dimension tables) with YAML-based semantic definitions.}
       \resumeItemListEnd
 
       \vspace{12pt}
       \textit{\small\textbf{Toyota Demand Forecasting Engine} | LSTM, N-BEATS, Prophet, PySpark}
       \resumeItemListStart
-        \resumeItem{Engineered enterprise-scale forecasting system managing \textbf{1.2 million SKU combinations} across 15 distribution centers, reducing annual inventory costs by \textbf{\$46.1 Million} with 70\% WMAPE.}
+        \resumeItem{Reduced \textbf{annual inventory costs by \$46.1 Million} with 70\% WMAPE across 15 distribution centers, by engineering enterprise-scale forecasting system managing \textbf{1.2 million SKU combinations}.}
         \resumeItem{Implemented \textbf{hybrid LSTM architecture} with dual-layer Lambda expansions, \textbf{zero-entry "+1 trick"} for MinMax scaling, and \textbf{ensemble model selection} (LSTM/N-BEATS/SVR/Prophet) per SKU characteristics.}
-        \resumeItem{Designed \texttt{orchestrator.py} with \textbf{multiprocessing pool} executing parallel forecasts with YAML-driven multi-environment configuration.}
+        \resumeItem{Accelerated \textbf{forecast execution throughput} across multiple environments by designing \texttt{orchestrator.py} with \textbf{multiprocessing pool} and YAML-driven configuration.}
       \resumeItemListEnd
 
       \vspace{12pt}
       \textit{\small\textbf{Halliburton Financial Predictive Modeling} | N-BEATS, SARIMAX, Deep Learning}
       \resumeItemListStart
-        \resumeItem{Developed \textbf{deep learning forecasting solution} for Accounts Payable/Receivable prediction using \textbf{N-BEATS} and \textbf{SARIMAX} ensemble, achieving \textbf{98\% accuracy} in invoice dispute prediction.}
-        \resumeItem{Reduced financial forecast \textbf{delivery time by 98\%} through automated pipeline optimization and multi-variate time series modeling capturing both trend and seasonality patterns.}
+        \resumeItem{Achieved \textbf{98\% accuracy} in invoice dispute prediction by developing \textbf{deep learning forecasting solution} for Accounts Payable/Receivable using \textbf{N-BEATS and SARIMAX} ensemble.}
+        \resumeItem{Reduced financial forecast \textbf{delivery time by 98\%} by building automated pipeline with multi-variate time series modeling capturing both trend and seasonality patterns.}
+      \resumeItemListEnd
+
+      \vspace{12pt}
+      \textit{\small\textbf{Morningstar PDF Layout Intelligence} | Document Image Transformer (DIT), Computer Vision}
+      \resumeItemListStart
+        \resumeItem{Accelerated \textbf{PDF title extraction accuracy} for downstream business workflows by implementing \textbf{Document Image Transformer (DIT)} for automated structural layout analysis across diverse document formats.}
+        \resumeItem{Eliminated \textbf{manual document review bottleneck}, enabling business teams to consume structured title metadata, by building a \textbf{high-speed layout detection engine} that correctly identifies and classifies document titles from raw PDF inputs.}
       \resumeItemListEnd
 
       \vspace{12pt}
       \textit{\small\textbf{Firm Initiatives: Agentic AI \& MLOps Estimation Frameworks}}
       \resumeItemListStart
-        \resumeItem{Created \textbf{industry-first estimation frameworks} for Agentic AI and MLOps project sizing with 24+ iterations, \textbf{adopted across multiple Deloitte practices} for consistent project scoping.}
+        \resumeItem{Standardized \textbf{Agentic AI and MLOps project scoping} across multiple Deloitte practices, validated through \textbf{24+ iterations} of refinement and firm-wide adoption, by creating \textbf{industry-first estimation frameworks} for consistent project sizing.}
+      \resumeItemListEnd
+
+      \vspace{12pt}
+      \textit{\small\textbf{Firm Initiatives: UBIX AI Platform Evaluation}}
+      \resumeItemListStart
+        \resumeItem{Evaluated \textbf{UBIX AI} platform's strategic fit within Data Science practice, as validated by \textbf{comprehensive benchmarking against traditional manual algorithms}, by conducting rigorous performance testing to provide data-driven insights enabling SAP Practice Leader to finalize a \textbf{strategic enterprise AI partnership}.}
       \resumeItemListEnd
 
       \vspace{12pt}
@@ -178,23 +191,25 @@
       \vspace{12pt}
       \textit{\small\textbf{WIPRO Holmes (R\&D)} | LSTM, Reg-exp, Deep Learning}
       \resumeItemListStart
-        \resumeItem{Enhanced Contract Review tool using \textbf{Bi-LSTM + CRF architecture} for sequence labeling of legal clauses in MSAs and SOWs. The \textbf{bidirectional LSTM} captured long-range contextual dependencies while the \textbf{CRF layer} learned valid BIO tag transitions (B-CLAUSE → I-CLAUSE), preventing invalid sequence predictions. Combined with \textbf{character-level embeddings} for OOV legal terminology and \textbf{domain-specific regex patterns} for structured entities (dates, parties, amounts), improved extraction accuracy from \textbf{76\% to 93\%}.}
+        \resumeItem{Improved \textbf{legal clause extraction accuracy from 76\% to 93\%} in Contract Review tool by enhancing with \textbf{Bi-LSTM + CRF architecture} for sequence labeling in MSAs and SOWs. The \textbf{bidirectional LSTM} captured long-range contextual dependencies while the \textbf{CRF layer} learned valid BIO tag transitions (B-CLAUSE → I-CLAUSE), preventing invalid sequence predictions. Combined with \textbf{character-level embeddings} for OOV legal terminology and \textbf{domain-specific regex patterns} for structured entities (dates, parties, amounts).}
         \resumeItemListEnd
 
       \vspace{12pt}
       \textit{\small\textbf{Huawei Video (R\&D)} | DIP, Vector DB, Deep Learning}
       \resumeItemListStart
-        \resumeItem{Created data model for \textbf{real-time recommendation pipelines} using \textbf{Deep Interest Network (DIN)} for user behavior modeling. Built \textbf{attention-weighted embeddings} capturing user-item interactions, stored in \textbf{Redis} for low-latency serving + \textbf{Milvus} for vector similarity retrieval. Integrated with \textbf{RASE (Huawei Recommendation-as-a-Service)} for 3 pipelines: \textbf{Hot Broadcast} (trending long-form), \textbf{You May Like} (personalized long-form), and \textbf{Waterfall E2} (short-video infinite scroll).}
+        \resumeItem{Powered \textbf{3 real-time recommendation pipelines} (\textbf{Hot Broadcast}, \textbf{You May Like}, \textbf{Waterfall E2}) integrated with \textbf{RASE (Huawei Recommendation-as-a-Service)}, by creating data model using \textbf{Deep Interest Network (DIN)} with \textbf{attention-weighted embeddings} capturing user-item interactions, stored in \textbf{Redis} for low-latency serving + \textbf{Milvus} for vector similarity retrieval.}
         \resumeItemListEnd
         
       \vspace{12pt}
       \textit{\small\textbf{Shell Plc} | CNN, Transfer Learning, Machine Learning}
       \resumeItemListStart
-        \resumeItem{Built \textbf{CNN with VGG19 Transfer Learning} in Keras to detect small symbols (valves, pumps, instruments) in P\&ID drawings. Implemented \textbf{Hough Circle Transform} + \textbf{TensorFlow Object Detection API} for geometric shape recognition, automating 2D-to-3D schematic conversion.}
-        \resumeItem{Developed \textbf{OCR pipeline} combining \textbf{Tesseract} (for structured text) + \textbf{AWS Textract} (for tables/forms) with custom image preprocessing (contrast enhancement, adaptive thresholding, noise reduction) for legacy engineering document digitization.}
+        \resumeItem{Automated \textbf{2D-to-3D schematic conversion} for P\&ID drawings by building \textbf{CNN with VGG19 Transfer Learning} in Keras to detect small symbols (valves, pumps, instruments), combined with \textbf{Hough Circle Transform} + \textbf{TensorFlow Object Detection API} for geometric shape recognition.}
+        \resumeItem{Digitized \textbf{legacy engineering documents} by developing \textbf{OCR pipeline} combining \textbf{Tesseract} (for structured text) + \textbf{AWS Textract} (for tables/forms) with custom image preprocessing (contrast enhancement, adaptive thresholding, noise reduction).}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+  \vspace{12pt}
+
 
 
 %-----------PROJECTS-----------
